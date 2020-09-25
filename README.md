@@ -39,3 +39,6 @@ MATPATSCHOOL\matpat-lms> npm install bcrypt
 
 Nodemon :
 MATPATSCHOOL\matpat-lms> npm i -g nodemon
+
+cors + dotenv :
+MATPATSCHOOL\matpat-lms> npm i cors dotenv
