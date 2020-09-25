@@ -14,4 +14,4 @@ MATPATSCHOOL\matpat-lms> Npm i react-router-dom --save
 
 Chess + Chessboard :
 MATPATSCHOOL\matpat-lms> Npm i chess.js --save
-MATPATSCHOOL\matpat-lms> Npm i chrisoakman/chessboardjs --save
+MATPATSCHOOL\matpat-lms> Npm i @chrisoakman/chessboardjs --save
