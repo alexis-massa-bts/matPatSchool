@@ -18,22 +18,24 @@ MATPATSCHOOL\matpat-lms> Npm i @chrisoakman/chessboardjs --save
 
 tailwind css :
 
-> npm install tailwindcss
-> npx tailwind init
-> npm install postcss-cli
-> npm install autoprefixer
-> npm install postcss
+MATPATSCHOOL\matpat-lms> npm i tailwindcss
+MATPATSCHOOL\matpat-lms> npx tailwind init
+MATPATSCHOOL\matpat-lms> npm i postcss-cli
+MATPATSCHOOL\matpat-lms> npm i autoprefixer
+MATPATSCHOOL\matpat-lms> npm i postcss
 
 react spring :
 
-npm install react-spring
+MATPATSCHOOL\matpat-lms> npm install react-spring
 
 Fontawesome : 
 
-> npm i --save @fortawesome/fontawesome-svg-core
-> npm install --save @fortawesome/free-solid-svg-icons
-> npm install --save @fortawesome/react-fontawesome
+MATPATSCHOOL\matpat-lms> npm i --save @fortawesome/fontawesome-svg-core
+MATPATSCHOOL\matpat-lms> npm i --save @fortawesome/free-solid-svg-icons
+MATPATSCHOOL\matpat-lms> npm i --save @fortawesome/react-fontawesome
 
 Bcrypt :
+MATPATSCHOOL\matpat-lms> npm install bcrypt
 
-npm install bcrypt
+Nodemon :
+MATPATSCHOOL\matpat-lms> npm i -g nodemon
