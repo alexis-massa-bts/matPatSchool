@@ -1,7 +1,7 @@
 # matPatSchool
 MatPatSchool - PPE 1
 
-Dependencies :
+Install dependencies :
 MATPATSCHOOL> cd .\matpat-lms\
 Express :
 MATPATSCHOOL\matpat-lms> Npm i express –save
