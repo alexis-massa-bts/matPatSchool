@@ -17,6 +17,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongoose": "^5.10.7",
+    "nodemon": "^2.0.4",
     "postcss": "^8.0.9",
     "postcss-cli": "^8.0.0",
     "react": "^16.13.1",
