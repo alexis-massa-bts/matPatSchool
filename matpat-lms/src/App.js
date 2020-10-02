@@ -12,7 +12,7 @@ import AboutPage from './frontend/Views/About'
 
 function App() {
   return (
-    <div>
+    <div className="font-mono antialiased">
         <main>
           <Router>
 

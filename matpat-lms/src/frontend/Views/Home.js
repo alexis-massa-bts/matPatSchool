@@ -3,9 +3,11 @@ import homePic from '../../img/home-pic.png'
 
 function HomePage(){
     return(
-        <div className='p-3 h-page bg-primaryColor z-0 flex mb4'>
-            <div>
-                <h1 className='font-bold text-2xl'>MatPatSchool</h1>
+        <div className='p-3 h-page bg-primaryColor z-0 flex items-center text-white'>
+
+            <div style={{flex: "1 0 50%"}}>
+
+                <h1 className='font-bold text-2xl capitalize my-4 font-bold text-6x1'>MatPatSchool</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed aliquam nulla, consequat accumsan mi. 
                     Curabitur at magna efficitur, gravida dui in, venenatis nulla. Aenean purus sem, imperdiet et laoreet vitae, 
@@ -18,7 +20,12 @@ function HomePage(){
                 </p>
             </div>
 
-            <img src={homePic} className='w-2/4'/>
+            <div style={{flex: "1 0 50%"}}>
+
+                <img src={homePic} alt="book with a chess knight on it" className='flex-initial'/>
+
+            </div>
+            
         </div>  
     );
 }
