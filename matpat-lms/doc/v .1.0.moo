@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?PowerDesigner AppLocale="UTF16" ID="{C034E28C-1C51-4A5F-AF04-D07993275B1D}" Label="" LastModificationDate="1600432914" Name="v .1.0" Objects="252" Symbols="90" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="16.6.10.6261"?>
+<?PowerDesigner AppLocale="UTF16" ID="{C034E28C-1C51-4A5F-AF04-D07993275B1D}" Label="" LastModificationDate="1601829980" Name="v .1.0" Objects="233" Symbols="70" Target="Java" TargetLink="Reference" Type="{18112060-1A4B-11D1-83D9-444553540000}" signature="CLD_OBJECT_MODEL" version="16.6.10.6261"?>
 <!-- Veuillez ne pas modifier ce fichier -->
 
 <Model xmlns:a="attribute" xmlns:c="collection" xmlns:o="object">
@@ -980,7 +980,7 @@ IndxFKName=%REFR%_FK
 IndxThreshold=
 ColnFKName=%.3:PARENT%_%COLUMN%
 ColnFKNameUse=No</a:ModelOptionsText>
-<a:RepositoryFilename>D:\Cours\BTS\Année 2\PPE\MatPatSchool\Docs\v .1.0.moo</a:RepositoryFilename>
+<a:RepositoryFilename>C:\Cours\LocalRepository\matPatSchool\matpat-lms\doc\v .1.0.moo</a:RepositoryFilename>
 <c:ObjectLanguage>
 <o:Shortcut Id="o3">
 <a:ObjectID>127C1ADD-6690-4836-BD31-EC839B84CF86</a:ObjectID>
@@ -1567,9 +1567,9 @@ Shadow=0</a:DisplayPreferences>
 <c:Symbols>
 <o:AssociationSymbol Id="o6">
 <a:CreationDate>1599829328</a:CreationDate>
-<a:ModificationDate>1599837667</a:ModificationDate>
-<a:Rect>((-19498,7788), (-1013,9735))</a:Rect>
-<a:ListOfPoints>((-19098,8779),(-1413,8779))</a:ListOfPoints>
+<a:ModificationDate>1601829906</a:ModificationDate>
+<a:Rect>((-19422,8008), (-1013,10120))</a:Rect>
+<a:ListOfPoints>((-19022,9375),(-1413,8779))</a:ListOfPoints>
 <a:ArrowStyle>0</a:ArrowStyle>
 <a:LineColor>16744448</a:LineColor>
 <a:ShadowColor>12632256</a:ShadowColor>
@@ -1688,9 +1688,10 @@ SOURCE 0 Arial,8,N</a:FontList>
 </o:AssociationSymbol>
 <o:ClassSymbol Id="o7">
 <a:CreationDate>1599828120</a:CreationDate>
-<a:ModificationDate>1599837667</a:ModificationDate>
+<a:ModificationDate>1601829959</a:ModificationDate>
 <a:IconMode>-1</a:IconMode>
-<a:Rect>((-24132,4921), (-14064,12637))</a:Rect>
+<a:Rect>((-24056,4434), (-13988,14316))</a:Rect>
+<a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:ShadowStyle>1</a:ShadowStyle>
 <a:LineColor>128</a:LineColor>
 <a:FillColor>8637161</a:FillColor>
@@ -1706,6 +1707,7 @@ LABL 0 Arial,8,N</a:FontList>
 <a:BrushStyle>6</a:BrushStyle>
 <a:GradientFillMode>65</a:GradientFillMode>
 <a:GradientEndColor>16777215</a:GradientEndColor>
+<a:ManuallyResized>1</a:ManuallyResized>
 <c:Object>
 <o:Class Ref="o24"/>
 </c:Object>
@@ -3161,7 +3163,7 @@ Shadow=0</a:DisplayPreferences>
 <o:DependencySymbol Id="o44">
 <a:CreationDate>1599827857</a:CreationDate>
 <a:ModificationDate>1600430961</a:ModificationDate>
-<a:Rect>((2588,12470), (15098,14260))</a:Rect>
+<a:Rect>((2588,12470), (15098,14274))</a:Rect>
 <a:ListOfPoints>((2988,13312),(14698,13162))</a:ListOfPoints>
 <a:ArrowStyle>8</a:ArrowStyle>
 <a:LineColor>128</a:LineColor>
@@ -5785,7 +5787,6 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <o:InteractionFragmentSymbol Id="o127">
 <a:CreationDate>1600431694</a:CreationDate>
 <a:ModificationDate>1600432183</a:ModificationDate>
-<a:RegionConditionPositionList>((2500,300))</a:RegionConditionPositionList>
 <a:Rect>((-13083,-12434), (14019,1164))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>15257808</a:LineColor>
@@ -5831,7 +5832,6 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <o:InteractionFragmentSymbol Id="o131">
 <a:CreationDate>1600432288</a:CreationDate>
 <a:ModificationDate>1600432373</a:ModificationDate>
-<a:RegionConditionPositionList>((2500,300))</a:RegionConditionPositionList>
 <a:Rect>((-13175,-20785), (14115,-13848))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>15257808</a:LineColor>
@@ -5854,7 +5854,6 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <o:InteractionFragmentSymbol Id="o133">
 <a:CreationDate>1600432380</a:CreationDate>
 <a:ModificationDate>1600432412</a:ModificationDate>
-<a:RegionConditionPositionList>((2500,300))</a:RegionConditionPositionList>
 <a:Rect>((-13130,-30474), (14252,-22696))</a:Rect>
 <a:AutoAdjustToText>0</a:AutoAdjustToText>
 <a:LineColor>15257808</a:LineColor>
@@ -6011,8 +6010,8 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:Code>Eleve</a:Code>
 <a:CreationDate>1599828120</a:CreationDate>
 <a:Creator>UTI302</a:Creator>
-<a:ModificationDate>1599837562</a:ModificationDate>
-<a:Modifier>UTI302</a:Modifier>
+<a:ModificationDate>1601829980</a:ModificationDate>
+<a:Modifier>alexi</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
 <o:Attribute Id="o141">
@@ -6059,9 +6058,31 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
+<o:Attribute Id="o145">
+<a:ObjectID>0758A370-CE0E-469D-85BA-43AAB7BC217A</a:ObjectID>
+<a:Name>licence</a:Name>
+<a:Code>licence</a:Code>
+<a:CreationDate>1601829895</a:CreationDate>
+<a:Creator>alexi</a:Creator>
+<a:ModificationDate>1601829904</a:ModificationDate>
+<a:Modifier>alexi</a:Modifier>
+<a:DataType>int</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+</o:Attribute>
+<o:Attribute Id="o146">
+<a:ObjectID>7F8DFBD9-CF92-4705-A6D3-18EF5419B03D</a:ObjectID>
+<a:Name>date_fin_licence</a:Name>
+<a:Code>dateFinLicence</a:Code>
+<a:CreationDate>1601829962</a:CreationDate>
+<a:Creator>alexi</a:Creator>
+<a:ModificationDate>1601829980</a:ModificationDate>
+<a:Modifier>alexi</a:Modifier>
+<a:DataType>java.util.Date</a:DataType>
+<a:Attribute.Visibility>-</a:Attribute.Visibility>
+</o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o145">
+<o:Operation Id="o147">
 <a:ObjectID>6C9F6D23-28AF-4756-8EE4-7F191F89B292</a:ObjectID>
 <a:Name>modifierMDP</a:Name>
 <a:Code>modifierMDP</a:Code>
@@ -6072,7 +6093,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:ReturnType>void</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o146">
+<o:Operation Id="o148">
 <a:ObjectID>FA504DC6-FA63-409B-A3B4-CE7FECA8D202</a:ObjectID>
 <a:Name>demandeMDP</a:Name>
 <a:Code>demandeMDP</a:Code>
@@ -6096,7 +6117,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:Comment>Un professeur est un objet qui représente l&#39;acteur professeur.</a:Comment>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o147">
+<o:Attribute Id="o149">
 <a:ObjectID>AA936199-F2A8-496A-8F03-623F6408E541</a:ObjectID>
 <a:Name>nom</a:Name>
 <a:Code>nom</a:Code>
@@ -6107,7 +6128,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o148">
+<o:Attribute Id="o150">
 <a:ObjectID>A277E430-C638-419B-AC3B-D216CEE016FA</a:ObjectID>
 <a:Name>prenom</a:Name>
 <a:Code>prenom</a:Code>
@@ -6118,7 +6139,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o149">
+<o:Attribute Id="o151">
 <a:ObjectID>D8964034-6F6D-48EF-AD4F-3CF492CDE6A5</a:ObjectID>
 <a:Name>email</a:Name>
 <a:Code>email</a:Code>
@@ -6141,7 +6162,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:Modifier>UTI302</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o150">
+<o:Attribute Id="o152">
 <a:ObjectID>E5B1A2A6-43C0-456C-AE84-93DD08F37326</a:ObjectID>
 <a:Name>nom</a:Name>
 <a:Code>nom</a:Code>
@@ -6154,7 +6175,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 </o:Attribute>
 </c:Attributes>
 <c:Operations>
-<o:Operation Id="o151">
+<o:Operation Id="o153">
 <a:ObjectID>83E38766-AE5E-4351-AFF1-88A9B9A588A2</a:ObjectID>
 <a:Name>ajouterEleve</a:Name>
 <a:Code>ajouterEleve</a:Code>
@@ -6165,7 +6186,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:ReturnType>void</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o152">
+<o:Operation Id="o154">
 <a:ObjectID>A95688EA-56FA-4056-B6F6-A6B091DCB0A4</a:ObjectID>
 <a:Name>retirerEleve</a:Name>
 <a:Code>retirerEleve</a:Code>
@@ -6176,7 +6197,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:ReturnType>void</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o153">
+<o:Operation Id="o155">
 <a:ObjectID>8C3AE1AA-07CD-4895-B8D4-562BBC35FEEE</a:ObjectID>
 <a:Name>importerEleve</a:Name>
 <a:Code>importerEleve</a:Code>
@@ -6187,7 +6208,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:ReturnType>void</a:ReturnType>
 <a:TemplateBody>%DefaultBody%</a:TemplateBody>
 </o:Operation>
-<o:Operation Id="o154">
+<o:Operation Id="o156">
 <a:ObjectID>6F651530-883B-40E1-A973-8690EFBAFAEC</a:ObjectID>
 <a:Name>exporterEleve</a:Name>
 <a:Code>exporterEleve</a:Code>
@@ -6210,7 +6231,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:Modifier>UTI302</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o155">
+<o:Attribute Id="o157">
 <a:ObjectID>C1FD59DA-BBB7-4A3E-A527-6C9A596C6989</a:ObjectID>
 <a:Name>nomParcours</a:Name>
 <a:Code>nomParcours</a:Code>
@@ -6221,7 +6242,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:DataType>int</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o156">
+<o:Attribute Id="o158">
 <a:ObjectID>3CF355CA-285E-4D93-B9BD-5FDB91B814EC</a:ObjectID>
 <a:Name>grade</a:Name>
 <a:Code>grade</a:Code>
@@ -6244,7 +6265,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:Modifier>UTI302</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o157">
+<o:Attribute Id="o159">
 <a:ObjectID>BDEBB92C-67DE-46F9-8899-FE273828AC3C</a:ObjectID>
 <a:Name>nomCours</a:Name>
 <a:Code>nomCours</a:Code>
@@ -6255,7 +6276,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o158">
+<o:Attribute Id="o160">
 <a:ObjectID>9F157522-3540-41A2-8F85-A5AE481A3372</a:ObjectID>
 <a:Name>date</a:Name>
 <a:Code>date</a:Code>
@@ -6266,7 +6287,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:DataType>Date</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o159">
+<o:Attribute Id="o161">
 <a:ObjectID>E8F7B682-35C9-4F05-9310-17A3575AE081</a:ObjectID>
 <a:Name>heure</a:Name>
 <a:Code>heure</a:Code>
@@ -6289,7 +6310,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:Modifier>UTI302</a:Modifier>
 <a:UseParentNamespace>0</a:UseParentNamespace>
 <c:Attributes>
-<o:Attribute Id="o160">
+<o:Attribute Id="o162">
 <a:ObjectID>2DD4C32B-B136-4097-B6E7-E3BDA1B329E2</a:ObjectID>
 <a:Name>nomContenu</a:Name>
 <a:Code>nomContenu</a:Code>
@@ -6300,7 +6321,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o161">
+<o:Attribute Id="o163">
 <a:ObjectID>D36BBDEA-57C6-4D3C-80EE-7698C5C05B9D</a:ObjectID>
 <a:Name>source</a:Name>
 <a:Code>source</a:Code>
@@ -6311,7 +6332,7 @@ DISPNAME 0 Arial,8,U</a:FontList>
 <a:DataType>String</a:DataType>
 <a:Attribute.Visibility>-</a:Attribute.Visibility>
 </o:Attribute>
-<o:Attribute Id="o162">
+<o:Attribute Id="o164">
 <a:ObjectID>5D6DE5D0-B250-4A56-9B13-72FFBFE514D5</a:ObjectID>
 <a:Name>emplacement</a:Name>
 <a:Code>emplacement</a:Code>
@@ -6978,7 +6999,7 @@ Fin du cas d\rquote utilisation.\par
 </o:UseCaseAssociation>
 </c:UseCaseAssociations>
 <c:TargetModels>
-<o:TargetModel Id="o163">
+<o:TargetModel Id="o165">
 <a:ObjectID>C5EDDE35-BB87-4464-AB12-2E5A91F8122F</a:ObjectID>
 <a:Name>Java</a:Name>
 <a:Code>Java</a:Code>
@@ -6994,7 +7015,7 @@ Fin du cas d\rquote utilisation.\par
 <o:Shortcut Ref="o3"/>
 </c:SessionShortcuts>
 </o:TargetModel>
-<o:TargetModel Id="o164">
+<o:TargetModel Id="o166">
 <a:ObjectID>BBDE26C2-6A8E-4029-B06D-6A040BCB2C91</a:ObjectID>
 <a:Name>WSDL for Java</a:Name>
 <a:Code>WSDLJava</a:Code>
@@ -7010,7 +7031,7 @@ Fin du cas d\rquote utilisation.\par
 <o:Shortcut Ref="o4"/>
 </c:SessionShortcuts>
 </o:TargetModel>
-<o:TargetModel Id="o165">
+<o:TargetModel Id="o167">
 <a:ObjectID>57A802BA-8479-42E0-9A53-BFE1F57635C5</a:ObjectID>
 <a:Name>Français</a:Name>
 <a:Code>French</a:Code>
