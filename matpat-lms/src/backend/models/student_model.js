@@ -1,14 +1,43 @@
-"lastname"
-"name"
-"login"
-"pwd"
+const mongoose = require('mongoose');
 
+const studentTable = new mongoose.Schema({
+    lastname: {
+        type: String,
+        required: true,
+        unique: false
+    },
+    name: {
+        type: String,
+        required: true,
+        unique: false
+    },
+    login: {
+        type: String,
+        required: true,
+        unique: true 
+    },
+    password: {
+        type: String,
+        required: true,
+        unique: false
+    },
+    licence: {
+        type: Number,
+        required: false,
+        unique: true
+    },
+    noLicence: {
+        type: Date,
+        required: false,
+        unique: true
+    }
+});
 
-
-function changePwd(){
-
+function changePwd() {
 }
 
-function askPwd(){
-    
+function askPwd() {
 }
+
+const  Student = mongoose.model('Student', studentTable);
+module.exports = Student;

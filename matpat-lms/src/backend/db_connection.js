@@ -8,4 +8,4 @@ export default function dbConnect(){
 export default function dbDisconnect(){
     db.connection.close();
     if (err) { throw err; }
-}   
+}
