@@ -5,7 +5,7 @@ function HomePage(){
     return(
         <div className='p-3 h-page bg-primaryColor z-0 flex items-center text-white'>
 
-            <div style={{flex: "1 0 50%"}}>
+            <div className="px-10" style={{flex: "1 0 50%"}}>
 
                 <h1 className='font-bold text-2xl capitalize my-4 font-bold text-6x1'>MatPatSchool</h1>
                 <p>
