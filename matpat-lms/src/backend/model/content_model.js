@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const contentTable = new mongoose.Schema({
+const contentSchema = new mongoose.Schema({
     contentName: {
         type: String,
         required: true,
@@ -18,5 +18,5 @@ const contentTable = new mongoose.Schema({
     }
 });
 
-const  Content = mongoose.model('Content', contentTable);
+const  Content = mongoose.model('Content', contentSchema);
 module.exports = Content;

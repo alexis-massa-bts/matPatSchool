@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const studentTable = new mongoose.Schema({
+const teacherSchema = new mongoose.Schema({
     lastname: {
         type: String,
         required: true,
@@ -11,6 +11,11 @@ const studentTable = new mongoose.Schema({
         required: true,
         unique: false
     },
+    email: {
+        type: String,
+        required: true,
+        unique: true
+    },
     login: {
         type: String,
         required: true,
@@ -20,24 +25,8 @@ const studentTable = new mongoose.Schema({
         type: String,
         required: true,
         unique: false
-    },
-    licence: {
-        type: Number,
-        required: false,
-        unique: true
-    },
-    noLicence: {
-        type: Date,
-        required: false,
-        unique: true
     }
 });
 
-function changePwd() {
-}
-
-function askPwd() {
-}
-
-const  Student = mongoose.model('Student', studentTable);
-module.exports = Student;
+const  Teacher = mongoose.model('Teacher', teacherSchema);
+module.exports = Teacher;
