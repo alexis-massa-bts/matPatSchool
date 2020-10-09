@@ -8,6 +8,8 @@ import Header from './frontend/Components/Header'
 import Footer from './frontend/Components/Footer'
 import HomePage from './frontend/Views/Home'
 import AboutPage from './frontend/Views/About'
+import AuthentificationPage from './frontend/Views/Authentification'
+import CoursesPage from './frontend/Views/Courses'
 
 
 function App() {
@@ -21,18 +23,30 @@ function App() {
               <Switch>
                 <Route exact path="/">
 
-                     <HomePage />
+                  <HomePage />
 
                 </Route>
 
                 <Route path="/about">
 
-                    <AboutPage />
+                  <AboutPage />
+
+                </Route>
+
+                <Route path="/login">
+
+                  <AuthentificationPage />
+
+                </Route>
+
+                <Route path="/courses">
+
+                  <CoursesPage />
 
                 </Route>
               </Switch>
 
-              <Footer />
+              
 
           </Router>
         </main>
