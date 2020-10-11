@@ -9,12 +9,16 @@ function NavigationMenu(props){
             </div>
             <ul className="text-2xl">
                 <li>
-                    <Link to="/" className='text-blue-500 py-3 border-t border-b block' 
+                    <Link to="/home" className='text-blue-500 py-3 border-t border-b block' 
                     onClick={props.closeMenu}>Home</Link>
                 </li>
                 <li>
                     <Link to="/courses" className='text-blue-500 py-3 border-t border-b block' 
                     onClick={props.closeMenu}>Mes Cours</Link>
+                </li>
+                <li>
+                    <Link to="/coursescalendar" className='text-blue-500 py-3 border-t border-b block' 
+                    onClick={props.closeMenu}>Calendrier Des Cours</Link>
                 </li>
                 <li>
                     <Link to="/about" className='text-blue-500 py-3 border-t border-b block' 
