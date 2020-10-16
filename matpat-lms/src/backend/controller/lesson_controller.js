@@ -1,9 +1,11 @@
 const Lesson = require("../model/lesson_model");
+const Circularjson = require('circular-json');
 
 exports.getLessons = async function (req, res, next) {
   try {
-    var lessons = Lesson.find({});
-    // console.log(lessons);
+    console.log('ici');
+    var lessons = Circularjson.stringify(Lesson.find({}));
+    console.log(lessons);
     return res.status(200).json({
       status: 200,
       data: lessons,
@@ -16,7 +18,8 @@ exports.getLessons = async function (req, res, next) {
 
 exports.createLesson = async function (req, res, next) {
   try {
-
+    console.log('test');
+    return true;
   } catch (e) {
     return res.status(400).json({ status: 400, message: e.message });
   }
