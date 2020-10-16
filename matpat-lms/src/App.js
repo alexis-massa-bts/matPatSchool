@@ -10,8 +10,11 @@ import Footer from './frontend/Components/Footer'
 import HomePage from './frontend/Views/Home'
 import AboutPage from './frontend/Views/About'
 import AuthentificationPage from './frontend/Views/Authentification'
+import AuthProf from './frontend/Views/AuthProf'
+import AuthStud from './frontend/Views/AuthStud'
 import CoursesPage from './frontend/Views/Courses'
 import CoursesCalendarPage from './frontend/Views/CoursesCalendar'
+
 
 const Auth = {
   isAuthenticated: true,
@@ -47,6 +50,10 @@ function App() {
                 <Route exact path="/" component={AuthentificationPage} />
 
                 <Route path="/login" component={AuthentificationPage} />
+
+                <Route path="/AuthProf" component={AuthProf} />
+
+                <Route path="/AuthStud" component={AuthStud} />
 
                 <PrivateRoute path="/about" component={AboutPage} />
 
