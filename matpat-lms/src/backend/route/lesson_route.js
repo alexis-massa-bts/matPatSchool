@@ -1,11 +1,10 @@
 const router = require("express").Router();
-const Lesson = require("../model/lesson_model");
-let lesson = require("../model/lesson_model");
+const control = require("../controller/lesson_controller");
 
 router.route("/").get((req, res) => {
-  lesson
+  control
     .find()
-    .then((lesson) => res.json(lesson))
+    .then((control) => res.json(control))
     .catch((err) => res.status(400).json("Error:" + err));
 });
 
@@ -16,13 +15,7 @@ router.route("/add").post((req, res) => {
   const endTime = req.body.endTime;
   const description = req.body.description;
 
-  const newLesson = new Lesson({
-    lesson_name,
-    date,
-    startTime,
-    endTime,
-    description,
-  });
+  const newLesson = control.createLesson(lesson_name, date, startTime, endTime, description);
 
   newLesson
     .save()
@@ -31,29 +24,29 @@ router.route("/add").post((req, res) => {
 });
 
 router.route("/:id").get((req, res) => {
-  lesson
+  control
     .findById(req.params.id)
-    .then((lesson) =>
-      res.json(lesson).catch((err) => res.json("Error:" + err))
+    .then((control) =>
+      res.json(control).catch((err) => res.json("Error:" + err))
     );
 });
 
 router.route("/update/:id").post((req, res) => {
-  lesson
+  control
     .findByIdAndUpdate(req.params.id)
-    .then((lesson) => {
-      lesson.lesson_name = req.body.lesson_name;
-      lesson.date = req.body.date;
-      lesson.startTime = req.body.statTime;
-      lesson.endTime = req.body.endTime;
-      lesson.description = req.body.description;
+    .then((control) => {
+      control.lesson_name = req.body.lesson_name;
+      control.date = req.body.date;
+      control.startTime = req.body.statTime;
+      control.endTime = req.body.endTime;
+      control.description = req.body.description;
     })
     .catch((err) => res.status(400).json("Error:" + err));
 
   router.route("/delete/:id").delete((req, res) => {
-    lesson
+    control
       .findByIdAndDelete(req.params.id)
-      .then((lesson) => res.json(lesson))
+      .then((control) => res.json(control))
       .catch((err) => res.status(400).json("Error: " + err));
   });
 });
