@@ -1,10 +1,10 @@
 const Lesson = require("../model/lesson_model");
-const Circularjson = require('circular-json');
-
 exports.getLessons = async function (req, res, next) {
+
   try {
     console.log('ici');
-    var lessons = Circularjson.stringify(Lesson.find({}));
+    //console.log(Lesson.find());
+    var lessons = await Lesson.find();
     console.log(lessons);
     return res.status(200).json({
       status: 200,

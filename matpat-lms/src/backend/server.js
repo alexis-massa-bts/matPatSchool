@@ -26,8 +26,8 @@ app.use(session({
     saveUninitialized : true
 }));
 
-const url = process.env.ATLAS_URL;
-mongoose.connect(url, { useNewUrlParser: true, useCreateIndex: true});
+const uri = 'mongodb+srv://Admin:Admin@cluster0.gciha.mongodb.net/MatPatSchoolBDD?retryWrites=true&w=majority';
+mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true});
 
 const connection = mongoose.connection;
 connection.once('open', () => {
