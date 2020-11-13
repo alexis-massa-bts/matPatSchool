@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const mongoose = require('mongoose');
+const MongoClient = require('mongodb').MongoClient;
 const passport = require("passport");
 const passportLocal = require("passport-local").Strategy;
 const cookieParser = require("cookie-parser");
@@ -11,6 +11,9 @@ require('dotenv').config();
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+const client = new MongoClient(process.env.ATLAS_URI, {useUnifiedTopology: true});
+
 
 //For each route file
 const lessonRoutes = require('./route/lesson_route');
@@ -26,8 +29,7 @@ app.use(session({
     saveUninitialized : true
 }));
 
-const uri = 'mongodb+srv://Admin:Admin@cluster0.gciha.mongodb.net/MatPatSchoolBDD?retryWrites=true&w=majority';
-mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true});
+
 
 const connection = mongoose.connection;
 connection.once('open', () => {
