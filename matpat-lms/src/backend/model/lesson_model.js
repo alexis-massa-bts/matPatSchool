@@ -17,7 +17,7 @@ const lessonSchema = new mongoose.Schema({
   description: {
     type: String,
   },
-  content: [{ id: String }],
+  content: [{ id: mongoose.Schema.Types.ObjectId }],
 });
 
 const Lesson = mongoose.model("Lesson", lessonSchema);
