@@ -12,7 +12,7 @@ import AboutPage from './frontend/Views/About'
 import AuthentificationPage from './frontend/Views/Authentification'
 import AuthProf from './frontend/Views/AuthProf'
 import AuthStud from './frontend/Views/AuthStud'
-import CoursesPage from './frontend/Views/Courses'
+import  CoursesPage from './frontend/Views/Courses'
 import CoursesCalendarPage from './frontend/Views/CoursesCalendar'
 
 
