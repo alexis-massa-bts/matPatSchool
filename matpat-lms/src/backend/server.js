@@ -1,26 +1,36 @@
 const express = require('express');
-const cors = require('cors');
-const lessonRouter = require('./route/lesson.route');
-const mongoose = require('mongoose');
-
-require('dotenv').config();
-
+const bodyParser = require('body-parser');
 const app = express();
+
+app.use(bodyParser.json());
+const path = require('path');
+
 const port = process.env.PORT || 3000;
 
-app.use(cors());
-app.use(express.json());
+const db = require('./db_connection');
 
-
-app.use('/lesson', lessonRouter);
-
-const uri = process.env.ATLAS_URI;
-mongoose.connect(uri, {useNewUrlParser: true, useUnifiedTopology: true});
-const connection = mongoose.connection;
-connection.once('open', ()=>{
-    console.log('Connected to BDD');
+db.connect((err) => {
+    if (err) {
+        console.log('Unable to connect to database');
+        process.exit(1);
+    } else {
+        app.listen(port, () => {
+            console.log(`Connected to database. App runnning on port : ${port}`);
+        });
+    }
 })
 
-app.listen(port, ()=>{
-    console.log(`Runnning on port : ${port}`);
+
+app.get('/',(req, res) => {
+    res.send("Pas d'accueil : GET /");
 });
+
+//All route files here : 
+const lessonRouter = require('./route/lesson.route');
+app.use('/lesson', lessonRouter);
+
+
+// const lessonRouter = require('./route/lesson.route');
+// app.use('/lesson', lessonRouter);
+
+
