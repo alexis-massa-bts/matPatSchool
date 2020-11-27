@@ -12,8 +12,8 @@ import AboutPage from './frontend/Views/About'
 import AuthentificationPage from './frontend/Views/Authentification'
 import AuthProf from './frontend/Views/AuthProf'
 import AuthStud from './frontend/Views/AuthStud'
-import CoursesPage from './frontend/Views/Courses'
-import CoursesCalendarPage from './frontend/Views/CoursesCalendar'
+import CoursesPage from './frontend/Views/Lessons_list'
+import CoursesCalendarPage from './frontend/Views/Lessons_calendar'
 
 
 const Auth = {
