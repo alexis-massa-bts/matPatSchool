@@ -12,8 +12,8 @@ import AboutPage from './frontend/Views/About'
 import AuthentificationPage from './frontend/Views/Authentification'
 import AuthProf from './frontend/Views/AuthProf'
 import AuthStud from './frontend/Views/AuthStud'
-import CoursesPage from './frontend/Views/Lessons_list'
-import CoursesCalendarPage from './frontend/Views/Lessons_calendar'
+import lessonPage from './frontend/Views/Lessons_list'
+import LessonCalendar from './frontend/Views/Lessons_calendar'
 
 
 const Auth = {
@@ -57,11 +57,11 @@ function App() {
 
                 <PrivateRoute path="/about" component={AboutPage} />
 
-                <PrivateRoute path="/courses" component={CoursesPage} />
+                <PrivateRoute path="/courses" component={lessonPage} />
 
                 <PrivateRoute path="/home" component={HomePage} />
                 
-                <PrivateRoute path="/coursescalendar" component={CoursesCalendarPage} />
+                <PrivateRoute path="/coursescalendar" component={LessonCalendar} />
 
               </Switch>
 
