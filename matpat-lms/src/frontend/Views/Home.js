@@ -3,7 +3,7 @@ import homePic from '../../img/home-pic.png'
 
 function HomePage(){
     return(
-        <div className='p-3 h-page bg-primaryColor z-0 flex items-center text-white'>
+        <div className='flex-grow p-3 h-page bg-primaryColor z-0 flex items-center text-white'>
 
             <div className="px-10" style={{flex: "1 0 50%"}}>
 
