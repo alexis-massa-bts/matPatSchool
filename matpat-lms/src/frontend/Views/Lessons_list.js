@@ -23,7 +23,7 @@ export default class lessonsPage extends Component {
     }
 
     render() {
-        const { error, isLoaded, items } = this.state;
+        const { error } = this.state;
         if (error) {
             return <div>Erreur : {error.message}</div>;
         } else {

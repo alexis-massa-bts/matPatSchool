@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
+import { Redirect } from 'react-router';
 
 function LoginFormProf(){
     const [username, setUser] = useState("");
@@ -7,10 +8,14 @@ function LoginFormProf(){
 
     function handleSubmit(event) {
         event.preventDefault();
+        if (username == "root" && password == "root") {
+            alert("connected")
+            this.setState({redirect: true});
+        }
     }
 
     function validateForm() {
-        return username.length > 0 && password.length > 0;
+        return (username.length > 0 && password.length > 0) 
     }
 
     return (
@@ -43,7 +48,7 @@ function LoginFormProf(){
                         </Link>
                     </span> <br />
 
-                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-3 py-2 px-4 rounded uppercase" 
+                    <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold mx-3 py-2 px-4 rounded uppercase"
                     disabled={!validateForm()} type="submit">
                         se connecter
                     </button>
