@@ -18,6 +18,7 @@ router.route("/add").post((req, res) => {
 });
 
 //READ
+//All
 router.route("/").get((req, res) => {
   db.getDB()
     .collection(collection)
@@ -31,12 +32,12 @@ router.route("/").get((req, res) => {
       }
     });
 });
-
+//One : id
 router.route("/:id").get((req, res) => {
   const lessonID = req.params.id;
   db.getDB()
     .collection(collection)
-    .find({_id: db.getPrimaryKey(lessonID)})
+    .find({ _id: db.getPrimaryKey(lessonID) })
     .toArray((err, documents) => {
       if (err) {
         console.log(err);
@@ -59,10 +60,11 @@ router.route("/:id").put((req, res) => {
         $set: {
           lessonName: userInput.lessonName,
           date: userInput.date,
-          description: userInput.description
-        }
-        // ,
-        // $
+          description: userInput.description,
+        },
+        $addToSet: {
+          content: userInput.content
+        },
       },
       { returnOriginal: false },
       (err, result) => {
