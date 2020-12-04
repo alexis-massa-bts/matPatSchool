@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const lessonSchema = new mongoose.Schema({
+const lessonLiveSchema = new mongoose.Schema({
   lessonName: {
     type: String,
     required: true,
@@ -8,11 +8,17 @@ const lessonSchema = new mongoose.Schema({
   date: {
     type: Date
   },
+  startTime: {
+    type: String
+  },
+  endTime: {
+    type: String
+  },
   description: {
     type: String,
   },
   content: [{ id: mongoose.Schema.Types.ObjectId }],
 });
 
-const lesson = mongoose.model("Lesson", lessonSchema);
-module.exports = lesson;
+const lessonLive = mongoose.model("Lesson", lessonLiveSchema);
+module.exports = lessonLive;

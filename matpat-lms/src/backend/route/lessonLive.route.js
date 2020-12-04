@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
 const db = require("../db_connection");
-const collection = "Lesson";
+const collection = "LessonLive";
 
 //CREATE
 router.route("/add").post((req, res) => {
@@ -32,38 +32,15 @@ router.route("/").get((req, res) => {
     });
 });
 
-router.route("/:id").get((req, res) => {
-  const lessonID = req.params.id;
-  db.getDB()
-    .collection(collection)
-    .find({_id: db.getPrimaryKey(lessonID)})
-    .toArray((err, documents) => {
-      if (err) {
-        console.log(err);
-      } else {
-        //console.log(documents);
-        res.json(documents);
-      }
-    });
-});
-
 //UPDATE
 router.route("/:id").put((req, res) => {
-  const lessonID = req.params.id;
+  const LessonLiveID = req.params.id;
   const userInput = req.body;
   db.getDB()
     .collection(collection)
     .findOneAndUpdate(
-      { _id: db.getPrimaryKey(lessonID) },
-      {
-        $set: {
-          lessonName: userInput.lessonName,
-          date: userInput.date,
-          description: userInput.description
-        }
-        // ,
-        // $
-      },
+      { _id: db.getPrimaryKey(LessonLiveID) },
+      { $set: { LessonLiveName: userInput.LessonLiveName } },
       { returnOriginal: false },
       (err, result) => {
         if (err) {
@@ -77,16 +54,19 @@ router.route("/:id").put((req, res) => {
 
 //DELETE
 router.route("/:id").delete((req, res) => {
-  const lessonID = req.params.id;
+  const LessonLiveID = req.params.id;
   db.getDB()
     .collection(collection)
-    .findOneAndDelete({ _id: db.getPrimaryKey(lessonID) }, (err, result) => {
-      if (err) {
-        console.log(err);
-      } else {
-        res.json(result);
+    .findOneAndDelete(
+      { _id: db.getPrimaryKey(LessonLiveID) },
+      (err, result) => {
+        if (err) {
+          console.log(err);
+        } else {
+          res.json(result);
+        }
       }
-    });
+    );
 });
 
 module.exports = router;
