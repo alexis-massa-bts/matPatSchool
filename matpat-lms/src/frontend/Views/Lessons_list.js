@@ -6,7 +6,6 @@ export default class lessonsPage extends Component {
     constructor(props) {
         super();
         this.state = {
-
             lessons: []
         };
     }
