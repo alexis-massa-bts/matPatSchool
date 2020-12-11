@@ -33,8 +33,7 @@ class EditLesson extends Component {
                     description: response.data.description,
                     date: new Date(response.data.date)
                 })
-                console.log(response.data.lessonName)
-                console.log(this.state)
+              console.log(this.props.match.params.id)
             })
             .catch((error) => {
                 console.log(error);
@@ -118,12 +117,13 @@ class EditLesson extends Component {
               <div className="form-group">
                 <label>Date: </label>
                 <div>
-                  <input type="text" value={this.state.date}/>
+                {/* <input type="submit" value="Edit lessons" className="btn btn-primary" onChange={this.onChangeDate}/> */}
+                <DatePicker
+                  required
+                  selected={this.state.date}
+                  onChange={this.onChangeDate}
+                />
                 </div>
-              </div>
-      
-              <div className="form-group">
-                <input type="submit" value="Edit lessons" className="btn btn-primary" />
               </div>
             </form>
           </div>

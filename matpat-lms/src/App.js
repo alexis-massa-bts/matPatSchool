@@ -16,6 +16,7 @@ import lessonPage from './frontend/Views/Lessons_list'
 import LessonCalendar from './frontend/Views/Lessons_calendar'
 import EditLessonsList from './frontend/Views/Edit_lessons_list'
 import EditLesson from './frontend/Views/Edit_lesson'
+import CreateLesson from './frontend/Views/create_lesson'
 
 
 const Auth = {
@@ -69,9 +70,9 @@ function App() {
 
                 <PrivateRoute path="/edit_lessons" component={EditLesson} />
 
-              </Switch>
+                <PrivateRoute path="/create_lesson" component={CreateLesson} />
 
-              <Footer />
+              </Switch>
 
           </Router>
         </main>

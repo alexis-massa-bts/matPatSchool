@@ -21,6 +21,10 @@ function NavigationMenu(props){
                     onClick={props.closeMenu}>Modifier Cours</Link>
                 </li>
                 <li>
+                    <Link to="/create_lesson" className='text-blue-500 py-3 border-t border-b block' 
+                    onClick={props.closeMenu}>Créer Cours</Link>
+                </li>
+                <li>
                     <Link to="/coursescalendar" className='text-blue-500 py-3 border-t border-b block' 
                     onClick={props.closeMenu}>Calendrier Des Cours</Link>
                 </li>
