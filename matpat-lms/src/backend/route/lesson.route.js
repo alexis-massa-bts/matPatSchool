@@ -37,7 +37,7 @@ router.route("/:id").get((req, res) => {
   const lessonID = req.params.id;
   db.getDB()
     .collection(collection)
-    .find({ _id: db.getPrimaryKey(lessonID) })
+    .find({ _id: db.getPrimaryKey(lessonID)})
     .toArray((err, documents) => {
       if (err) {
         console.log(err);
