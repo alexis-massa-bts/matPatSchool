@@ -6,12 +6,13 @@ import { registerLocale, setDefaultLocale } from  "react-datepicker";
 import fr from 'date-fns/locale/fr';
 registerLocale('fr', fr);
 setDefaultLocale('fr', fr);
+let id;
 
 class EditLesson extends Component {
-
     constructor(props) {
-        super();
-
+        super(props);
+        id = props.location.pathname.split("/");
+        console.log(id[2]);
         this.onChangelessonName = this.onChangelessonName.bind(this);
         this.onChangeDescription = this.onChangeDescription.bind(this);
         this.onChangeDate = this.onChangeDate.bind(this);
@@ -26,14 +27,14 @@ class EditLesson extends Component {
     }
 
     componentDidMount() {
-        axios.get('http://localhost:3001/lesson/'+this.props.match.params.id)
+      console.log(id[2]);
+        axios.get('http://localhost:3001/lesson/'+id[2])
             .then(response => {
                 this.setState({ 
                     lessonName: response.data.lessonName,
                     description: response.data.description,
                     date: new Date(response.data.date)
                 })
-              console.log(this.props.match.params.id)
             })
             .catch((error) => {
                 console.log(error);
@@ -53,7 +54,7 @@ class EditLesson extends Component {
     }
 
     onChangelessonName(e) {
-        this.state({
+        this.setState({
             lessonName : e.taget.value
         })
     }
@@ -81,7 +82,7 @@ class EditLesson extends Component {
     
         console.log(lesson);
     
-        axios.put('http://localhost:3001/lesson' + this.props.match.params.id, lesson)
+        axios.put('http://localhost:3001/lesson' + id[2], lesson)
           .then(res => console.log(res.data));
     
         window.location = '/';
@@ -101,7 +102,6 @@ class EditLesson extends Component {
                 <input  type="text"
                     required
                     className="form-control"
-                    value={this.state.lessonName}
                     onChange={this.onChangelessonName}
                     />
               </div>
@@ -110,7 +110,6 @@ class EditLesson extends Component {
                 <input  type="text"
                     required
                     className="form-control"
-                    value={this.state.description}
                     onChange={this.onChangeDescription}
                     />
               </div>
@@ -118,12 +117,13 @@ class EditLesson extends Component {
                 <label>Date: </label>
                 <div>
                 {/* <input type="submit" value="Edit lessons" className="btn btn-primary" onChange={this.onChangeDate}/> */}
-                <DatePicker
+                <input
                   required
                   selected={this.state.date}
                   onChange={this.onChangeDate}
                 />
                 </div>
+                <button onClick={this.onSubmit}>Valider</button>
               </div>
             </form>
           </div>

@@ -4,7 +4,7 @@ import axios from 'axios'
 export default class lessonsPage extends Component {
 
     constructor(props) {
-        super();
+        super()
         this.state = {
             lessons: []
         };
